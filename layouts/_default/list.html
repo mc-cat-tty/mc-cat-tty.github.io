@@ -1,0 +1,19 @@
+{{ define "main" }}
+  <main>
+    <article>
+      <header>
+        <h1>{{ .Title | first (sub (.Title | len) 1) }}</h1>
+      </header>
+      <!-- "{{ .Content }}" pulls from the markdown content of the corresponding _index.md -->
+      {{ .Content }}
+    </article>
+    <ul>
+      <!-- Ranges through content/posts/*.md -->
+      {{ range .Pages }}
+        <li>
+          <a style="text-decoration: underline;" href="{{ .Permalink }}">{{ .File.ContentBaseName }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  </main>
+{{ end }}

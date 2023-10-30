@@ -31,3 +31,6 @@
 [submodule "content/PAR"]
 	path = content/PAR
 	url = https://github.com/mc-cat-tty/PAR
+[submodule "themes/PaperMod"]
+	path = themes/PaperMod
+	url = https://github.com/adityatelange/hugo-PaperMod.git

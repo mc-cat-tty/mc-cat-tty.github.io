@@ -1,0 +1,9 @@
+baseURL: https://mc-cat-tty.github.io
+languageCode: en-us
+title: mc-cat-tty open notes
+description: Francesco Mecatti's lecture notes [UniMoRe]
+theme: paperMod
+
+markup:
+  defaultMarkdownHandler: goldMark
+
