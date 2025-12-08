@@ -59,11 +59,11 @@ const Home: React.FC = () => {
       <section className="flex flex-col md:flex-row items-center md:items-start gap-12">
         <div className="w-full md:w-1/3 flex flex-col items-center md:items-start gap-6">
           <div className="relative w-64 h-64">
-            <div className="absolute inset-0 bg-stone-300 rounded-3xl translate-x-2 translate-y-2"></div>
+            <div className="absolute inset-0 rounded-3xl translate-x-2 translate-y-2"></div>
             <img
               src={PERSONAL_INFO.avatar}
               alt={PERSONAL_INFO.name}
-              className="relative w-full h-full object-cover rounded-3xl border-2 border-stone-800 grayscale hover:grayscale-0 transition-all duration-500"
+              className="relative w-full h-full object-cover rounded-3xl border-2 border-stone-800"
             />
           </div>
           {/* Desktop Socials: Hidden on mobile, Flex on desktop */}
@@ -73,8 +73,8 @@ const Home: React.FC = () => {
         </div>
         
         <div className="w-full md:w-2/3 text-center md:text-left space-y-6 md:pt-8">
-          <h1 className="font-serif text-4xl md:text-6xl font-bold text-ink leading-tight">
-            Hi, I'm <span className="text-stone-500">{PERSONAL_INFO.name.split(' ')[0]}.</span>
+          <h1 className="font-serif text-3xl md:text-5xl font-bold text-ink leading-tight">
+            Hi, I'm <span className="text-stone-500">{PERSONAL_INFO.name.split(' ')[0]}!</span>
           </h1>
           <h2 className="font-sans text-xl md:text-2xl font-medium text-ink-light">
             {PERSONAL_INFO.role}
@@ -90,13 +90,10 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Decorative divider */}
-      <div className="w-24 h-1 bg-stone-300 mx-auto md:mx-0 rounded-full"></div>
-
       {/* Projects Preview */}
       <section className="space-y-8">
         <div className="flex justify-between items-end border-b-2 border-stone-200 pb-4">
-          <h2 className="font-serif text-3xl font-bold text-ink">Selected Projects</h2>
+          <h2 className="font-serif text-3xl font-bold text-ink">Latest Projects</h2>
           <Link 
             to="/projects" 
             className="font-sans font-bold text-sm text-stone-500 hover:text-ink transition-colors flex items-center gap-1 group"
