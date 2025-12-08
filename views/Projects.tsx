@@ -9,7 +9,7 @@ const Projects: React.FC = () => {
         <h1 className="font-serif text-3xl font-bold text-ink">Projects</h1>
         <p className="font-sans text-stone-600">
           Personal and academic projects I developed or co-developed.
-          Most of the contributions to the organizations I belonged to are not listed here.<br></br>
+          Most of the contributions to the organizations I have been a member of are not listed here.<br></br>
           You can find them on GitHub:&ensp;
           <a 
             href="https://github.com/mmr-driverless"
