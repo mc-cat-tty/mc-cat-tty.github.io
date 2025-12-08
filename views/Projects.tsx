@@ -28,8 +28,7 @@ const Projects: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="font-bold text-ink border-b-2 border-stone-400 hover:border-ink hover:bg-stone-200/50 transition-all duration-200"
-          >HackingMoRe</a>,&ensp;
-          and&ensp;
+          >HackingMoRe</a>, and&ensp;
           <a 
             href="https://github.com/ITIS-Enrico-Fermi"
             target="_blank"
