@@ -7,7 +7,6 @@ export interface Project {
 }
 
 export interface Note {
-  id: string;
   courseTitle: string;
   description: string;
   date: string;

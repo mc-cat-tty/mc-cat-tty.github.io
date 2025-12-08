@@ -129,37 +129,35 @@ export const PROJECTS: Project[] = [
 
 export const NOTES: Note[] = [
   {
-    id: '1',
-    courseTitle: 'Advanced Algorithms',
-    description: 'Comprehensive notes on dynamic programming, network flow, and NP-completeness proofs.',
-    date: 'Fall 2023',
+    courseTitle: 'Algoritmi Distribuiti [IT]',
+    description: 'Distributed and approximated algorithms by professor M. Montangero and G. Cabri.',
+    date: 'Fall 2025',
     downloadUrl: '#',
     size: '2.4 MB',
   },
   {
-    id: '2',
-    courseTitle: 'Machine Learning Fundamentals',
-    description: 'Summary of supervised and unsupervised learning, including derivations for backpropagation.',
-    date: 'Spring 2023',
+    courseTitle: 'Deep Learning',
+    description: 'Machine Learning refresher, Deep Learning architectures, generative models, uncertainty estimation, transfer learning, and hints about diffusion models and reinforcement learning.',
+    date: 'Fall 2025',
     downloadUrl: '#',
     size: '4.1 MB',
   },
-  {
-    id: '3',
-    courseTitle: 'Operating Systems',
-    description: 'Detailed study guides on process management, memory paging, and file systems.',
-    date: 'Fall 2022',
-    downloadUrl: '#',
-    size: '1.8 MB',
-  },
-  {
-    id: '4',
-    courseTitle: 'Linear Algebra',
-    description: 'Handwritten notes covering vector spaces, eigenvalues, and SVD decomposition.',
-    date: 'Spring 2022',
-    downloadUrl: '#',
-    size: '5.2 MB',
-  },
+  // {
+  //   id: '3',
+  //   courseTitle: 'Operating Systems',
+  //   description: 'Detailed study guides on process management, memory paging, and file systems.',
+  //   date: 'Fall 2022',
+  //   downloadUrl: '#',
+  //   size: '1.8 MB',
+  // },
+  // {
+  //   id: '4',
+  //   courseTitle: 'Linear Algebra',
+  //   description: 'Handwritten notes covering vector spaces, eigenvalues, and SVD decomposition.',
+  //   date: 'Spring 2022',
+  //   downloadUrl: '#',
+  //   size: '5.2 MB',
+  // },
 ];
 
 

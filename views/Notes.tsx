@@ -8,7 +8,7 @@ const Notes: React.FC = () => {
       <div className="space-y-2">
         <h1 className="font-serif text-3xl font-bold text-ink">Notes</h1>
         <p className="font-sans text-stone-600">
-          Condensed knowledge from my academic coursework and independent research.
+          WIP.
         </p>
       </div>
 
