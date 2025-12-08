@@ -165,9 +165,8 @@ export const NOTES: Note[] = [
 
 export const PERSONAL_INFO = {
   name: "Francesco Mecatti",
-  nickname: "Mecat",
   role: "Graduate Computer Science Student",
-  bio: "I build robust systems and explore the intersection of distributed computing and AI. I believe in clean code, open knowledge, and the power of simple tools.",
+  bio: "Website still in construction.",
   avatar: avatarImg,
   socials: {
     github: "https://www.github.com/mc-cat-tty",

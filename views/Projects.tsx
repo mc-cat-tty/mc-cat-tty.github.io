@@ -8,7 +8,14 @@ const Projects: React.FC = () => {
       <div className="space-y-2">
         <h1 className="font-serif text-3xl font-bold text-ink">Projects</h1>
         <p className="font-sans text-stone-600">
-          A selection of things I've built, broken, and fixed again.
+          Personal and academic projects I developed during my journey.
+          Most of the contributions to the organizations I belonged to are not listed here.
+          You can find them on GitHub:
+          <a href="https://github.com/mmr-driverless">MMR Driverless</a>,
+          <a href="https://github.com/MMR-Electric-Driverless">MMR E-Driverless</a>,
+          <a href="https://github.com/HackingMoRe">HackingMoRe</a>,
+          <a href="https://github.com/ITIS-Enrico-Fermi">ITIS E. Fermi</a>.
+          A comprehensive explanation of the HackingMoRe infrastructure has been published <a href="https://ieeexplore.ieee.org/document/11261629">here</a>.
         </p>
       </div>
 
