@@ -136,7 +136,7 @@ export const NOTES: Note[] = [
     size: '2.4 MB',
   },
   {
-    courseTitle: 'Deep Learning',
+    courseTitle: 'Deep Learning [EN]',
     description: 'Machine Learning refresher, Deep Learning architectures, generative models, uncertainty estimation, transfer learning, and hints about diffusion models and reinforcement learning.',
     date: 'Fall 2025',
     downloadUrl: '#',
