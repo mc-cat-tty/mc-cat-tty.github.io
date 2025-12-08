@@ -19,6 +19,19 @@ import kriaFpgaImg from "./imgs/kria-fpga.png"
 import doorbellPcbImg from "./imgs/doorbell-pcb.png"
 
 
+export const PERSONAL_INFO = {
+  name: "Francesco Mecatti",
+  role: "Graduate Computer Science Student",
+  bio: "Website still in construction.",
+  avatar: avatarImg,
+  socials: {
+    github: "https://www.github.com/mc-cat-tty",
+    linkedin: "https://www.linkedin.com/in/francesco-mecatti-cs",
+    strava: "https://strava.app.link/MmPRIf1ZNYb",
+  }
+};
+
+
 export const PROJECTS: Project[] = [
   {
     title: 'AD Vehicles Assignments',
@@ -41,7 +54,7 @@ export const PROJECTS: Project[] = [
     tags: ['C++ 23', 'ROS2', 'RCLCPP', 'CMake'],
     link: 'https://github.com/mc-cat-tty/as_manager',
   },
-    {
+  {
     title: 'Kria OS',
     description: 'Real-time Linux recipes and layers for the Xilinx Kria KR260. Based on Yocto/BitBake stack.',
     imageUrl: kriaOsImg,
@@ -137,45 +150,16 @@ export const PROJECTS: Project[] = [
 export const NOTES: Note[] = [
   {
     courseTitle: 'Algoritmi Distribuiti [IT]',
-    description: 'Distributed and approximated algorithms by professor M. Montangero and G. Cabri.',
+    description: 'Distributed and approximation (applied to Traveling Salesman Problem and Vertex Cover) algorithms by professors M. Montangero and G. Cabri.',
     date: 'Fall 2025',
     downloadUrl: '#',
     size: '2.4 MB',
   },
   {
     courseTitle: 'Deep Learning [EN]',
-    description: 'Machine Learning refresher, Deep Learning architectures, generative models, uncertainty estimation, transfer learning, and hints about diffusion models and reinforcement learning.',
+    description: 'Machine Learning refresher, Deep Learning architectures, generative models, uncertainty estimation, transfer learning, and hints about diffusion models and reinforcement learning. By professors A. Porrello and S. Calderara.',
     date: 'Fall 2025',
     downloadUrl: '#',
     size: '4.1 MB',
   },
-  // {
-  //   id: '3',
-  //   courseTitle: 'Operating Systems',
-  //   description: 'Detailed study guides on process management, memory paging, and file systems.',
-  //   date: 'Fall 2022',
-  //   downloadUrl: '#',
-  //   size: '1.8 MB',
-  // },
-  // {
-  //   id: '4',
-  //   courseTitle: 'Linear Algebra',
-  //   description: 'Handwritten notes covering vector spaces, eigenvalues, and SVD decomposition.',
-  //   date: 'Spring 2022',
-  //   downloadUrl: '#',
-  //   size: '5.2 MB',
-  // },
 ];
-
-
-export const PERSONAL_INFO = {
-  name: "Francesco Mecatti",
-  role: "Graduate Computer Science Student",
-  bio: "Website still in construction.",
-  avatar: avatarImg,
-  socials: {
-    github: "https://www.github.com/mc-cat-tty",
-    linkedin: "https://www.linkedin.com/in/francesco-mecatti-cs",
-    strava: "https://strava.app.link/MmPRIf1ZNYb",
-  }
-};
