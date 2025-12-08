@@ -47,6 +47,7 @@ export const PROJECTS: Project[] = [
     imageUrl: kriaOsImg,
     tags: ['Xilinx Ultrascale+', 'Linux Kernel', 'PREEMPT_RT', 'SCHED_EDF', 'Devicetree', 'Yocto', 'BitBake', 'Bash'],
     link: 'https://github.com/EdoardoTorrini/mmr-kria-os',
+    imageFit: 'contain',
   },
   {
     title: 'Kria Hardware Description',
@@ -54,6 +55,7 @@ export const PROJECTS: Project[] = [
     imageUrl: kriaFpgaImg,
     tags: ['Xilinx Ultrascale+', 'Vivado', 'TCL', 'RTL Synth'],
     link: 'https://github.com/mc-cat-tty/mmr-kria-hardware-design',
+    imageFit: 'contain',
   },
   {
     title: 'LLVM Backend Assigments',
@@ -61,6 +63,7 @@ export const PROJECTS: Project[] = [
     imageUrl: llvmBackendImg,
     tags: ['C++', 'Clang', 'LLVM 16', 'LLVM IR', 'CMake'],
     link: 'https://github.com/mc-cat-tty/llvm-17.0.6-compilers',
+    imageFit: 'contain',
   },
   {
     title: 'Kaleidoscope Compiler',
@@ -75,6 +78,7 @@ export const PROJECTS: Project[] = [
     imageUrl: tricoreImg,
     tags: ['Docker', 'Tricore GCC', 'Infineon AURIX', 'ERIKA Enterprise'],
     link: 'https://github.com/mc-cat-tty/tricore-dev-env',
+    imageFit: 'contain',
   },
   {
     title: 'MMR Stock Manager',
@@ -82,6 +86,7 @@ export const PROJECTS: Project[] = [
     imageUrl: mmrStockImg,
     tags: ['Python3', 'Django', 'Javascript', 'jQuery', 'Bootstrap 5', 'WebSocket', 'DB modeling', 'REST', 'ORM'],
     link: 'https://github.com/mc-cat-tty/mmr_stock',
+    imageFit: 'contain',
   },
   {
     title: 'PlaceRank',
@@ -96,6 +101,7 @@ export const PROJECTS: Project[] = [
     imageUrl: personalFinanceImg,
     tags: ['Java SE 11', 'Swing', 'Doxygen'],
     link: 'https://github.com/mc-cat-tty/PersonalFinance',
+    imageFit: 'contain',
   },
   {
     title: 'PlanarEvolvedAntenna',
@@ -124,6 +130,7 @@ export const PROJECTS: Project[] = [
     imageUrl: doorbellPcbImg,
     tags: ['Fusion 360', 'KiCad'],
     link: 'https://github.com/mc-cat-tty/DoorbellCamPhy',
+    imageFit: 'contain',
   },
 ];
 

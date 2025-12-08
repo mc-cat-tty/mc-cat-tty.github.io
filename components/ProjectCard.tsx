@@ -16,14 +16,18 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       } 
     : { className: "h-full" };
 
+  const imageFit = project.imageFit || 'cover';
+  const imageContainerClass = imageFit === 'contain' ? 'bg-white' : 'bg-stone-200';
+  const imageClass = imageFit === 'contain' ? 'object-contain' : 'object-cover';
+
   return (
     <Wrapper {...wrapperProps}>
       <div className="group flex flex-col h-full bg-card border border-stone-300/50 rounded-lg overflow-hidden transition-all duration-200 active:scale-[0.98] active:border-stone-400">
-        <div className="h-48 overflow-hidden bg-stone-200">
+        <div className={`h-48 overflow-hidden ${imageContainerClass}`}>
           <img
             src={project.imageUrl}
             alt={project.title}
-            className="w-full h-full object-cover"
+            className={`w-full h-full ${imageClass}`}
           />
         </div>
         <div className="p-6 flex flex-col flex-grow">

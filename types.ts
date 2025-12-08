@@ -4,6 +4,7 @@ export interface Project {
   imageUrl: string;
   link?: string;
   tags: string[];
+  imageFit?: 'cover' | 'contain';
 }
 
 export interface Note {
