@@ -7,8 +7,23 @@ interface NoteCardProps {
 
 const NoteCard: React.FC<NoteCardProps> = ({ note }) => {
   const handleDownload = () => {
-    // In a real app, this would trigger a file download
-    alert(`Downloading notes for ${note.courseTitle}...`);
+    fetch(`${note.downloadUrl}/releases/latest`, {redirect: "follow"}).then(
+      response => {
+        if (response.status / 100 != 2) return null;
+        return response.json();
+      }
+    ).then(
+      data => {
+        if (!data) return null;
+        console.log(data);
+        const a = document.createElement('a');
+        a.href = data.assets[0].browser_download_url;
+        a.download = '';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      }
+    )
   };
 
   return (

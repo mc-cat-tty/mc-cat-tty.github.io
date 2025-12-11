@@ -152,14 +152,14 @@ export const NOTES: Note[] = [
     courseTitle: 'Algoritmi Distribuiti [IT]',
     description: 'Distributed and approximation (applied to Traveling Salesman Problem and Vertex Cover) algorithms by professors M. Montangero and G. Cabri.',
     date: 'Fall 2025',
-    downloadUrl: '#',
+    downloadUrl: 'https://api.github.com/repos/mc-cat-tty/AIAssistedCG',
     size: '2.4 MB',
   },
   {
     courseTitle: 'Deep Learning [EN]',
     description: 'Machine Learning refresher, Deep Learning architectures, generative models, uncertainty estimation, transfer learning, and hints about diffusion models and reinforcement learning. By professors A. Porrello and S. Calderara.',
     date: 'Fall 2025',
-    downloadUrl: '#',
+    downloadUrl: 'https://api.github.com/repos/mc-cat-tty/AIAssistedCG',
     size: '4.1 MB',
   },
 ];
