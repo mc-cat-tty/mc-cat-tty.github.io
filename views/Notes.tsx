@@ -17,7 +17,7 @@ const Notes: React.FC = () => {
         <p className="font-sans text-stone-600">
           Notes of (some of) the academic courses I attended so far. Typewritten with love and 100% reviewed by a human.
           No LLMs were harmed during the process.<br></br>
-          Below, you can find a legend of the progress indicators visible for each note. The indicators show the progress of each of the note-taking phase: lectures, review of the text and the formulas, including diagrams, tables, illustrations and images.
+          Below, you can find a legend of the progress indicators visible for each note. The indicators show the progress of each note-taking phase: lectures, review of the text and the formulas, and review of the figures, including diagrams, tables, illustrations and images.
         </p>
 
         {/* Legend */}

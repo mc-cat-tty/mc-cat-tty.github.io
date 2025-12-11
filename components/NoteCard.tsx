@@ -98,33 +98,25 @@ const NoteCard: React.FC<NoteCardProps> = ({ note }) => {
     useEffect(() => {
         let isMounted = true;
 
-        const fetchNoteData = async () => {
-            setIsLoading(true);
-            try {
-                fetch(`${note.downloadUrl}/releases/latest`, {redirect: "follow"}).then(
-                    response => {
-                        if (response.status / 100 != 2) return null;
-                        return response.json();
-                    }
-                ).then(
-                    data => {
-                        if (!data) return null;
-                        if (isMounted) {
-                            setProgressData(createProgressData(data.body));
-                            setDownloadUrl(data.assets[0].browser_download_url);
-                        }
-                    }
-                );
+        setIsLoading(true);
+        fetch(`${note.downloadUrl}/releases/latest`, {redirect: "follow"}).then(
+            response => {
+                if (response.status / 100 != 2) throw new Error('Failed to fetch GitHub API data');
+                return response.json();
             }
-            catch (error) {
-                console.error("Failed to fetch note data:", error);
+        ).then(
+            data => {
+                if (!data) throw new Error('Failed to fetch GitHub API data');
+                if (isMounted) {
+                    setProgressData(createProgressData(data.body));
+                    setDownloadUrl(data.assets[0].browser_download_url);
+                }
             }
-            finally {
-                if (isMounted) setIsLoading(false);
-            }
-        };
-
-        fetchNoteData();
+        ).catch(
+            error => isMounted = false
+        ).finally(
+            () => { if (isMounted) setIsLoading(false); }
+        );
 
         return () => { isMounted = false; };
     }, []);
