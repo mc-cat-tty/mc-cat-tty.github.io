@@ -12,5 +12,4 @@ export interface Note {
   description: string;
   date: string;
   downloadUrl: string;
-  size: string;
 }

@@ -14,7 +14,9 @@ const NoteCard: React.FC<NoteCardProps> = ({ note }) => {
   // };
     const [progressData, setProgressData] = useState(undefined);
     const [isLoading, setIsLoading] = useState(false);
-    const [downloadUrl, setDownloadUrl] = useState(false);
+    const [downloadUrl, setDownloadUrl] = useState('');
+    const [downloadSize, setDownloadSize] = useState(0);
+    const humanReadableSizeLUT = ['B', 'kB', 'MB', 'GB', 'TB'];
 
     const createProgressData = (manifestStr) => {
         const manifestJson = JSON.parse(manifestStr);
@@ -110,6 +112,11 @@ const NoteCard: React.FC<NoteCardProps> = ({ note }) => {
                 if (isMounted) {
                     setProgressData(createProgressData(data.body));
                     setDownloadUrl(data.assets[0].browser_download_url);
+                    const bytesSize = data.assets[0].size;
+                    const exponent = Math.floor(Math.log10(bytesSize) / Math.log10(1024));
+                    const suffix = humanReadableSizeLUT[exponent];
+                    const humanReadableSize = (bytesSize / Math.pow(1024, exponent)).toFixed(1) + suffix;
+                    setDownloadSize(humanReadableSize);
                 }
             }
         ).catch(
@@ -222,7 +229,7 @@ const NoteCard: React.FC<NoteCardProps> = ({ note }) => {
             <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
             </svg>
             Download
-            <span className="ml-2 text-xs opacity-60 font-normal">({note.size})</span>
+            <span className="ml-2 text-xs opacity-60 font-normal">({downloadSize})</span>
         </button>
       </a>
     </div>
