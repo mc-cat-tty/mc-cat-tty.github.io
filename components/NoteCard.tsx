@@ -6,25 +6,42 @@ interface NoteCardProps {
 }
 
 const NoteCard: React.FC<NoteCardProps> = ({ note }) => {
-  const handleDownload = () => {
-    fetch(`${note.downloadUrl}/releases/latest`, {redirect: "follow"}).then(
-      response => {
-        if (response.status / 100 != 2) return null;
-        return response.json();
-      }
-    ).then(
-      data => {
-        if (!data) return null;
-        console.log(data);
-        const a = document.createElement('a');
-        a.href = data.assets[0].browser_download_url;
-        a.download = '';
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-      }
-    )
+  var downloadUrl = null;
+  const todayDate = new Date().toLocaleDateString('sv');
+  var manifestJson = {
+    "course_start": todayDate,
+    "course_end": todayDate,
+    "textual_progress": todayDate,
+    "visual_progress": todayDate
   };
+
+  const handleDownload = () => {
+    if (!downloadUrl) {
+      alert('Connecting to GitHub API... retry in a few seconds without refreshing the page!');
+      return;
+    }
+
+    const a = document.createElement('a');
+    a.download = '';
+    a.href = downloadUrl;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+
+  }
+
+  fetch(`${note.downloadUrl}/releases/latest`, {redirect: "follow"}).then(
+    response => {
+      if (response.status / 100 != 2) return null;
+      return response.json();
+    }
+  ).then(
+    data => {
+      if (!data) return null;
+      manifestJson = JSON.parse(data.body).name;
+      downloadUrl = data.assets[0].browser_download_url;
+    }
+  )
 
   return (
     <div className="flex flex-col md:flex-row justify-between items-start md:items-center p-6 bg-card border border-stone-300/50 rounded-lg transition-colors duration-200">
