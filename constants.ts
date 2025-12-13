@@ -17,6 +17,7 @@ import asManagerImg from "./imgs/as-manager.png"
 import kriaOsImg from "./imgs/kria-os.png"
 import kriaFpgaImg from "./imgs/kria-fpga.png"
 import doorbellPcbImg from "./imgs/doorbell-pcb.png"
+import canSatImg from "./imgs/cansat.png"
 
 
 export const PERSONAL_INFO = {
@@ -114,6 +115,14 @@ export const PROJECTS: Project[] = [
     imageUrl: personalFinanceImg,
     tags: ['Java SE 11', 'Swing', 'Doxygen'],
     link: 'https://github.com/mc-cat-tty/PersonalFinance',
+    imageFit: 'contain',
+  },
+  {
+    title: 'CanSat',
+    description: 'Mini satellite deployed at an altitude of 1km using a rocket. Designed from scratch including mechanical parts, electronic circuitry, onboard firmware, ground antenna and ground station software for measurements processing.',
+    imageUrl: canSatImg,
+    tags: ['C', 'FreeRTOS', 'Python3', 'InfluxDB', 'LoRa protocol', 'KiCAD', 'Fusion360'],
+    link: 'https://github.com/ITIS-Enrico-Fermi/Cansat2021',
     imageFit: 'contain',
   },
   {
