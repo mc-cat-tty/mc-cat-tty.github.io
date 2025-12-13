@@ -15,9 +15,9 @@ const Notes: React.FC = () => {
       <div className="space-y-2 mb-8">
         <h1 className="font-serif text-3xl font-bold text-ink">Notes</h1>
         <p className="font-sans text-stone-600">
-          Notes of (some of) the academic courses I attended so far. Typewritten with love and 100% reviewed by a human.
-          No LLMs were harmed during the process.<br></br>
-          Below, you can find a legend of the progress indicators visible for each note. The indicators show the progress of each note-taking phase: lectures, review of the text and the formulas, and review of the figures, including diagrams, tables, illustrations and images.
+          Notes of (some of) the academic courses I attended so far. Typewritten with love and <a className="font-bold text-ink">100% reviewed by a human.</a> No LLMs were harmed during the process.<br></br>
+          Below, you can find a <a className="font-bold text-ink">legend</a> of the <a className="font-bold text-ink">progress indicators</a> visible for each note.
+          The indicators show the progress of each note-taking phase: <a className="font-bold text-ink">lectures</a>, review of the <a className="font-bold text-ink">text</a> and the formulas, and review of the <a className="font-bold text-ink">figures</a>, including diagrams, tables, illustrations and images.
         </p>
 
         {/* Legend */}
