@@ -202,7 +202,7 @@ const NoteCard: React.FC<NoteCardProps> = ({ note }) => {
         )}
       </div>
       
-      <a href={downloadUrl} download="">
+      <a href={downloadUrl} download="" className="w-full md:w-auto flex-shrink-0 flex items-center justify-center">
         <button
             className={`w-full md:w-auto flex-shrink-0 flex items-center justify-center px-4 py-2 md:px-5 md:py-2.5 bg-ink text-paper font-sans font-bold text-sm rounded-lg border border-transparent transition-all duration-200 group shadow-sm mt-2 md:mt-0  ${isLoading ? 'opacity-50' : 'opacity-100 hover:bg-stone-700 active:scale-95'}`}
             aria-label={`Download ${note.courseTitle} notes`}
