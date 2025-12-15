@@ -17,12 +17,20 @@ import asManagerImg from "./imgs/as-manager.png"
 import kriaOsImg from "./imgs/kria-os.png"
 import kriaFpgaImg from "./imgs/kria-fpga.png"
 import doorbellPcbImg from "./imgs/doorbell-pcb.png"
+import canSatImg from "./imgs/cansat.png"
 
 
 export const PERSONAL_INFO = {
   name: "Francesco Mecatti",
   role: "Graduate Computer Science Student",
-  bio: "Website still in construction.",
+  bio: `
+  I am a Master's student of Computer Science at the [University of Modena and Reggio Emilia](https://www.unimore.it/en) and I am really into robotic and autonomous systems.\
+  Over the past few years, I spent most of my time working on the platform side of these systems; as of now, I am studying to become proficient also in the learning-based solutions towards which robotics is increasingly shifting.\
+  Outside of CS-related topics, I enjoy learning about and experimenting with electronics and digital modelling & fabrication.
+  Recently, I dipped my toe into the world of cybersecurity by competing in [CyberChallenge.IT](https://cyberchallenge.it/en) with the HackingMoRe team.\
+  Previously, during my three years of Bachelor's, I was involved in my university's Formula Student team [MMR E-Driverless](https://www.moremodenaracing.it).
+  You can view my full educational backtround and work experiences on my [LinkedIn pofile](https://www.linkedin.com/in/francesco-mecatti-cs).
+  `,
   avatar: avatarImg,
   socials: {
     github: "https://www.github.com/mc-cat-tty",
@@ -117,6 +125,14 @@ export const PROJECTS: Project[] = [
     imageFit: 'contain',
   },
   {
+    title: 'CanSat',
+    description: 'Mini satellite deployed at an altitude of 1km using a rocket. Designed from scratch including mechanical parts, electronic circuitry, onboard firmware, ground antenna and ground station software.',
+    imageUrl: canSatImg,
+    tags: ['C', 'FreeRTOS', 'Python3', 'InfluxDB', 'LoRa protocol', 'KiCAD', 'Fusion360'],
+    link: 'https://github.com/ITIS-Enrico-Fermi/Cansat2021',
+    imageFit: 'contain',
+  },
+  {
     title: 'PlanarEvolvedAntenna',
     description: 'Radiation pattern optimizer for planar antennas via a genetic algorithm. Some experiments have been carried out to test the effectiveness of different variations of the GA.',
     imageUrl: evolvedAntennaImg,
@@ -149,17 +165,15 @@ export const PROJECTS: Project[] = [
 
 export const NOTES: Note[] = [
   {
-    courseTitle: 'Algoritmi Distribuiti [IT]',
-    description: 'Distributed and approximation (applied to Traveling Salesman Problem and Vertex Cover) algorithms by professors M. Montangero and G. Cabri.',
+    courseTitle: 'Distributed Algorithms [IT]',
+    description: 'Approximation and distributed algos by professors M. Montangero and G. Cabri. Approximation algos: simple solutions for Traveling Salesman Problem and Vertex Cover, Christofides algo, ILP alternative, BnB optimization. Distributed algorithms: broadcasting, spanning tree, leader election, synchronous networks, routing (with faults management), distributed hash tables, Chord case-study.',
     date: 'Fall 2025',
-    downloadUrl: '#',
-    size: '2.4 MB',
+    downloadUrl: 'https://api.github.com/repos/mc-cat-tty/AIAssistedCG',
   },
   {
     courseTitle: 'Deep Learning [EN]',
-    description: 'Machine Learning refresher, Deep Learning architectures, generative models, uncertainty estimation, transfer learning, and hints about diffusion models and reinforcement learning. By professors A. Porrello and S. Calderara.',
+    description: 'ML refresher, DL architectures (CNN, RNN, TCN, GNN, transformer, AE, QAE), genai, uncertainty estimation, self-supervised/transfer/continual learning, and hints about diffusion models and reinforcement learning. By professors A. Porrello and S. Calderara.',
     date: 'Fall 2025',
-    downloadUrl: '#',
-    size: '4.1 MB',
+    downloadUrl: 'https://api.github.com/repos/mc-cat-tty/AIAssistedCG',
   },
 ];
