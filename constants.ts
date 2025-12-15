@@ -126,7 +126,7 @@ export const PROJECTS: Project[] = [
   },
   {
     title: 'CanSat',
-    description: 'Mini satellite deployed at an altitude of 1km using a rocket. Designed from scratch including mechanical parts, electronic circuitry, onboard firmware, ground antenna and ground station software for measurements processing.',
+    description: 'Mini satellite deployed at an altitude of 1km using a rocket. Designed from scratch including mechanical parts, electronic circuitry, onboard firmware, ground antenna and ground station software.',
     imageUrl: canSatImg,
     tags: ['C', 'FreeRTOS', 'Python3', 'InfluxDB', 'LoRa protocol', 'KiCAD', 'Fusion360'],
     link: 'https://github.com/ITIS-Enrico-Fermi/Cansat2021',
