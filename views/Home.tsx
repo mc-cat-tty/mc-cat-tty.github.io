@@ -4,6 +4,40 @@ import { PERSONAL_INFO, PROJECTS, NOTES } from '../constants';
 import ProjectCard from '../components/ProjectCard';
 import NoteCard from '../components/NoteCard';
 
+const LINK_REGEX = /\[(.+?)\]\((.+?)\)/g;
+
+function HyperlinkReplace(str) {
+  const parts = [];
+  let lastIndex = 0;
+  let match;
+
+  while ((match = LINK_REGEX.exec(str)) !== null) {
+    const textBefore = str.substring(lastIndex, match.index);
+    if (textBefore) {
+      parts.push(textBefore);
+    }
+
+    const linkText = match[1];
+    const url = match[2];
+
+    parts.push(
+      <a key={match.index} href={url} target="_blank" rel="noopener noreferrer" className="font-bold text-ink border-b-2 border-stone-400 hover:border-ink hover:bg-stone-200/50 transition-all duration-200">
+        {linkText}
+      </a>
+    );
+
+    lastIndex = match.index + match[0].length;
+  }
+
+  // 3. Add any remaining text after the last link
+  const textAfter = str.substring(lastIndex);
+  if (textAfter) {
+    parts.push(textAfter);
+  }
+
+  return <p>{parts}</p>;
+}
+
 const SocialButton: React.FC<{ href: string; icon: React.ReactNode; label: string }> = ({ href, icon, label }) => (
   <a
     href={href}
@@ -56,7 +90,7 @@ const Home: React.FC = () => {
   return (
     <div className="animate-fade-in space-y-20 py-8">
       {/* Hero Section */}
-      <section className="flex flex-col md:flex-row items-center md:items-start gap-12">
+      <section className="flex flex-col md:flex-row items-center gap-12">
         <div className="w-full md:w-1/3 flex flex-col items-center md:items-start gap-6">
           <div className="relative w-64 h-64">
             <div className="absolute inset-0 rounded-3xl translate-x-2 translate-y-2"></div>
@@ -72,15 +106,15 @@ const Home: React.FC = () => {
           </div>
         </div>
         
-        <div className="w-full md:w-2/3 text-center md:text-left space-y-6 md:pt-8">
+        <div className="w-full md:w-2/3 text-center md:text-left space-y-6">
           <h1 className="font-serif text-3xl md:text-5xl font-bold text-ink leading-tight">
             Hi, I'm <span className="text-stone-500">{PERSONAL_INFO.name.split(' ')[0]}!</span>
           </h1>
           <h2 className="font-sans text-xl md:text-2xl font-medium text-ink-light">
             {PERSONAL_INFO.role}
           </h2>
-          <p className="font-sans text-lg text-stone-600 leading-relaxed max-w-2xl">
-            {PERSONAL_INFO.bio}
+          <p className="font-sans text-lg text-stone-600 leading-relaxed max-w-2xl text-left">
+            {PERSONAL_INFO.bio.split('\n').map(str => <p>{HyperlinkReplace(str)}</p>)}
           </p>
           
           {/* Mobile Socials: Flex on mobile, Hidden on desktop */}
@@ -104,7 +138,7 @@ const Home: React.FC = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projectPreview.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+            <ProjectCard project={project} />
           ))}
         </div>
       </section>
@@ -123,7 +157,7 @@ const Home: React.FC = () => {
         </div>
         <div className="flex flex-col gap-4">
           {notesPreview.map((note) => (
-            <NoteCard key={note.id} note={note} />
+            <NoteCard note={note} />
           ))}
         </div>
       </section>

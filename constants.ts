@@ -23,7 +23,15 @@ import canSatImg from "./imgs/cansat.png"
 export const PERSONAL_INFO = {
   name: "Francesco Mecatti",
   role: "Graduate Computer Science Student",
-  bio: "Website still in construction.",
+  bio: `
+  I am a Master's student of Computer Science at the [University of Modena and Reggio Emilia](https://www.unimore.it/en) and I am really into robotic and autonomous systems.\
+  Over the past few years, I spent most of my time working on the platform side of these systems, including embedded architectures, microcontrollers, real-time control software, RTOSs, and lot of headaches caused by communication buses.\
+  As of now, I am studying to become proficient also in the learning-based solutions towards which robotics is increasingly shifting.\
+  Outside of CS-related topics, I enjoy learning about and experimenting with electronics and digital modelling & fabrication.
+  Recently, I dipped my toe into the world of cybersecurity by competing in [CyberChallenge.IT](https://cyberchallenge.it/en) with the HackingMoRe team.\
+  Previously, during my three years of Bachelor's, I was involved in my university's Formula Student team [MMR E-Driverless](https://www.moremodenaracing.it).
+  You can view my full educational backtround and work experiences on my [LinkedIn pofile](https://www.linkedin.com/in/francesco-mecatti-cs).
+  `,
   avatar: avatarImg,
   socials: {
     github: "https://www.github.com/mc-cat-tty",
