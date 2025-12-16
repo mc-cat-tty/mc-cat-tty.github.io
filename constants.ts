@@ -25,7 +25,7 @@ export const PERSONAL_INFO = {
   role: "Graduate Computer Science Student",
   bio: `
   I am a Master's student of Computer Science at the [University of Modena and Reggio Emilia](https://www.unimore.it/en) and I am really into robotic and autonomous systems.\
-  Over the past few years, I spent most of my time working on the platform side of these systems; as of now, I am studying to become proficient also in the learning-based solutions towards which robotics is increasingly shifting.\
+  Over the past few years, I spent most of my time working on the platform side of these systems; as of now, I am studying to become proficient also in the learning-based algorithms towards which robotics is increasingly shifting.\
   Outside of CS-related topics, I enjoy learning about and experimenting with electronics and digital modelling & fabrication.
   Recently, I dipped my toe into the world of cybersecurity by competing in [CyberChallenge.IT](https://cyberchallenge.it/en) with the HackingMoRe team.\
   Previously, during my three years of Bachelor's, I was involved in my university's Formula Student team [MMR E-Driverless](https://www.moremodenaracing.it).
