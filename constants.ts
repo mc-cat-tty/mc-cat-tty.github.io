@@ -168,12 +168,12 @@ export const NOTES: Note[] = [
     courseTitle: 'Distributed Algorithms [IT]',
     description: 'Approximation and distributed algos by professors M. Montangero and G. Cabri. Approximation algos: simple solutions for Traveling Salesman Problem and Vertex Cover, Christofides algo, ILP alternative, BnB optimization. Distributed algorithms: broadcasting, spanning tree, leader election, synchronous networks, routing (with faults management), distributed hash tables, Chord case-study.',
     date: 'Fall 2025',
-    downloadUrl: 'https://api.github.com/repos/mc-cat-tty/AIAssistedCG',
+    downloadUrl: 'https://api.github.com/repos/mc-cat-tty/AlgoritmiDistribuiti',
   },
   {
     courseTitle: 'Deep Learning [EN]',
     description: 'ML refresher, DL architectures (CNN, RNN, TCN, GNN, transformer, AE, QAE), genai, uncertainty estimation, self-supervised/transfer/continual learning, and hints about diffusion models and reinforcement learning. By professors A. Porrello and S. Calderara.',
     date: 'Fall 2025',
-    downloadUrl: 'https://api.github.com/repos/mc-cat-tty/AIAssistedCG',
+    downloadUrl: 'https://api.github.com/repos/mc-cat-tty/DeepLearning',
   },
 ];
