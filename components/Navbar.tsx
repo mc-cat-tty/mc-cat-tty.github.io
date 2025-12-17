@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
     }`;
 
   return (
-    <nav className="sticky top-0 z-50 w-full bg-paper/95 backdrop-blur-sm py-6">
+    <nav className="sticky top-0 z-50 w-full bg-paper/95 backdrop-blur-sm pt-5 pb-4">
       <div className="max-w-4xl mx-auto px-6 flex justify-center items-center">
         <div className="flex space-x-2 bg-accent/20 p-1.5 rounded-xl border border-accent/10">
           <NavLink to="/" end className={linkClass}>

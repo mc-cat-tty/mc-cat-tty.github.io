@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './views/Home';
@@ -8,6 +8,10 @@ import Notes from './views/Notes';
 // Wrapper to help with scroll restoration or layout specific logic if needed
 const ContentWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
   
   // Simple fade-in effect keying on location path
   return (
