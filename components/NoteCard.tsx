@@ -22,7 +22,7 @@ const NoteCard: React.FC<NoteCardProps> = ({ note }) => {
         {
           id: 'lectures',
           dateAtProgress: progressData.lecturesProgressDate, 
-          percentageProgress: progressData.lecturesProgressPercentage,
+          percentageProgress: progressData.lecturesProgressPercentage.toFixed(0),
           color: 'bg-[#9BA896]',
           barHeight: '100%',
           label: 'Lectures',
@@ -38,7 +38,7 @@ const NoteCard: React.FC<NoteCardProps> = ({ note }) => {
         {
           id: 'text',
           dateAtProgress: progressData.textualProgressDate, 
-          percentageProgress: progressData.textualProgressPercentage,
+          percentageProgress: progressData.textualProgressPercentage.toFixed(0),
           color: 'bg-[#E39587]',
           barHeight: '70%',
           label: 'Text',
@@ -54,7 +54,7 @@ const NoteCard: React.FC<NoteCardProps> = ({ note }) => {
         {
           id: 'figures',
           dateAtProgress: progressData.visualProgressDate, 
-          percentageProgress: progressData.visualProgressPercentage,
+          percentageProgress: progressData.visualProgressPercentage.toFixed(0),
           color: 'bg-[#C4A7E7]',
           barHeight: '50%',
           label: 'Figures',
