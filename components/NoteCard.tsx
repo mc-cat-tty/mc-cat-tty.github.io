@@ -37,8 +37,8 @@ const NoteCard: React.FC<NoteCardProps> = ({ note }) => {
         },
         {
           id: 'text',
-          dateAtProgress: progressData.textProgressDate, 
-          percentageProgress: progressData.textProgressPercentage,
+          dateAtProgress: progressData.textualProgressDate, 
+          percentageProgress: progressData.textualProgressPercentage,
           color: 'bg-[#E39587]',
           barHeight: '70%',
           label: 'Text',
