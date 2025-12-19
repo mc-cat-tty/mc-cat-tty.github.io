@@ -29,7 +29,7 @@ export const PERSONAL_INFO = {
   Outside of CS-related topics, I enjoy learning about and experimenting with electronics and digital modelling & fabrication.
   Recently, I dipped my toe into the world of cybersecurity by competing in [CyberChallenge.IT](https://cyberchallenge.it/en) with the HackingMoRe team.\
   Previously, during my three years of Bachelor's, I was involved in my university's Formula Student team [MMR E-Driverless](https://www.moremodenaracing.it).
-  You can view my full educational backtround and work experiences on my [LinkedIn pofile](https://www.linkedin.com/in/francesco-mecatti-cs).
+  You can view my full educational background and work experiences on my [LinkedIn pofile](https://www.linkedin.com/in/francesco-mecatti-cs).
   `,
   avatar: avatarImg,
   socials: {
