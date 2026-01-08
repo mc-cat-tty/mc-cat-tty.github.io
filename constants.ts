@@ -85,6 +85,7 @@ export const PROJECTS: Project[] = [
     tags: ['C++', 'Clang', 'LLVM 16', 'LLVM IR', 'CMake'],
     link: 'https://github.com/mc-cat-tty/llvm-17.0.6-compilers',
     imageFit: 'contain',
+    readMore: '/blog/template.html'
   },
   {
     title: 'Kaleidoscope Compiler',
