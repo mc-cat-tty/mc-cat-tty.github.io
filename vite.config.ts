@@ -1,6 +1,7 @@
 import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
+import { viteStaticCopy } from 'vite-plugin-static-copy'; 
 
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, process.cwd(), '');
@@ -9,7 +10,17 @@ export default defineConfig(({ mode }) => {
         port: 3000,
         host: '0.0.0.0',
       },
-      plugins: [react()],
+      plugins: [
+        react(),
+        viteStaticCopy({
+          targets: [
+            {
+              src: 'public',
+              dest: ''
+            }
+          ]
+        })
+      ],
       resolve: {
         alias: {
           '@': path.resolve(__dirname, '.'),
@@ -19,6 +30,7 @@ export default defineConfig(({ mode }) => {
       rollupOptions: {
         input: {
           main: path.resolve(__dirname, 'index.html'),
+          llvm_backend_assingments: path.resolve(__dirname, 'blog/llvm_backend_assingments.html'),
           // template: path.resolve(__dirname, 'blog/template.html'),
         },
       },
