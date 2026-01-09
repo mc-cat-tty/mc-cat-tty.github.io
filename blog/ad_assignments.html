@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonomous Driving Vehicles Assignments | mec.cat</title>
+    <link rel="icon" type="image/png" href="https://placehold.co/64x64/1c1917/f0e7dc.png?text=A">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Configuration matches main app -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              paper: '#f0e7dc',
+              card: '#fdfbf7',
+              ink: '#1c1917',
+              'ink-light': '#44403c',
+              accent: '#d6cbb1',
+            },
+            fontFamily: {
+              serif: ['"Libre Baskerville"', 'serif'],
+              sans: ['"Inter"', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #f0e7dc;
+        color: #1c1917;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #d6cbb1; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #a8a29e; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #78716c; 
+      }
+      /* Smooth scrolling for anchor links */
+      html {
+          scroll-behavior: smooth;
+      }
+    </style>
+</head>
+<body class="min-h-screen font-sans selection:bg-stone-300 selection:text-ink flex flex-col">
+
+    <!-- Navigation / Back Button -->
+    <nav class="sticky top-0 z-[100] w-full bg-paper/95 backdrop-blur-sm py-6 border-b border-stone-300/30 print:hidden">
+        <div class="max-w-4xl mx-auto px-6 relative flex items-center">
+            <a href="/" class="inline-flex items-center text-stone-500 hover:text-ink transition-colors font-semibold text-sm group shrink-0 relative z-20">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 transform group-hover:-translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                Home
+            </a>
+            
+            <!-- Blog Title in Navbar (Absolutely Centered) -->
+            <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-10">
+                <span class="font-sans font-bold text-ink text-sm md:text-base truncate sm:block max-w-md px-4 pointer-events-auto">
+                    AD Vehicles Assignments
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-3xl mx-auto w-full px-6 py-12">
+        
+        <!-- Header -->
+        <header class="mb-12 border-b-2 border-stone-800 pb-4">
+            <div class="mb-4 flex flex-wrap gap-2">
+                 <span class="px-2 py-1 text-xs font-bold font-sans uppercase tracking-wider border border-stone-300 rounded-md text-stone-500 bg-paper/50">
+                    Python3
+                  </span>
+                 <span class="px-2 py-1 text-xs font-bold font-sans uppercase tracking-wider border border-stone-300 rounded-md text-stone-500 bg-paper/50">
+                    C++
+                  </span>
+                 <span class="px-2 py-1 text-xs font-bold font-sans uppercase tracking-wider border border-stone-300 rounded-md text-stone-500 bg-paper/50">
+                    PCL
+                  </span>
+                 <span class="px-2 py-1 text-xs font-bold font-sans uppercase tracking-wider border border-stone-300 rounded-md text-stone-500 bg-paper/50">
+                    Eigen3
+                  </span>
+                 <span class="px-2 py-1 text-xs font-bold font-sans uppercase tracking-wider border border-stone-300 rounded-md text-stone-500 bg-paper/50">
+                    Numpy
+                  </span>
+                  <span class="px-2 py-1 text-xs font-bold font-sans uppercase tracking-wider border border-stone-300 rounded-md text-stone-500 bg-paper/50">
+                    Matplotlib
+                  </span>
+            </div>
+            <h1 class="font-sans text-4xl md:text-5xl font-bold text-ink leading-tight">
+                Autonomous Driving Assignments
+            </h1>
+        </header>
+
+        <!-- Article Body -->
+        <article class="font-sans text-stone-700 leading-relaxed text-lg">
+            
+            <!-- Section 1 -->
+            <section id="introduction" class="mb-16 scroll-mt-28">
+                <h2 class="font-sans text-2xl font-bold text-ink mb-4">Reports</h2>
+                <p class="mb-6">
+                    <ul class="list-disc list-outside space-y-2 mb-6 ml-5 md:ml-6 text-stone-600 marker:text-stone-400">
+                      <li>
+                        Particle filter: <a 
+                        href="https://github.com/mc-cat-tty/paav-assignments/blob/main/3-particle-filter/Report_Particle_Filter.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="font-bold text-ink border-b-2 border-stone-400 hover:border-ink hover:bg-stone-200/50 transition-all duration-200"
+                        >here</a>.
+                      </li>
+                      
+                      <li>
+                        Vehicle Modeling: <a 
+                        href="https://github.com/mc-cat-tty/paav-assignments/blob/main/4-vehicles-modeling/results/(1)%20Report%20Vehicle%20Modeling.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="font-bold text-ink border-b-2 border-stone-400 hover:border-ink hover:bg-stone-200/50 transition-all duration-200"
+                        >here</a>.
+                      </li>
+
+                      <li>
+                        Vehicle Controls: <a 
+                        href="https://github.com/mc-cat-tty/paav-assignments/blob/main/5-controls/results/(2)%20Report%20Vehicle%20Controls.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="font-bold text-ink border-b-2 border-stone-400 hover:border-ink hover:bg-stone-200/50 transition-all duration-200"
+                        >here</a>.
+                      </li>
+
+                      <li>
+                        Planning: <a 
+                        href="https://github.com/mc-cat-tty/paav-assignments/blob/main/6-planning/results/(3)%20Report%20Planning.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="font-bold text-ink border-b-2 border-stone-400 hover:border-ink hover:bg-stone-200/50 transition-all duration-200"
+                        >here</a>.
+                      </li>
+                    </ul>
+                </p>
+            </section>
+        </article>
+
+    </main>
+</body>
+</html>

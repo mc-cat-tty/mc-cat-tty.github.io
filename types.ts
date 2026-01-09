@@ -5,6 +5,7 @@ export interface Project {
   link?: string;
   tags: string[];
   imageFit?: 'cover' | 'contain';
+  readMore?: string;
 }
 
 export interface Note {

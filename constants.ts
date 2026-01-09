@@ -47,6 +47,7 @@ export const PROJECTS: Project[] = [
     imageUrl: paavImg,
     tags: ['Python3', 'C++', 'PCL', 'Eigen3', 'Numpy', 'Matplotlib'],
     link: 'https://github.com/mc-cat-tty/paav-assignments',
+    readMore: '/blog/ad_assignments.html'
   },
   {
     title: 'HPC Assignments',
@@ -79,12 +80,13 @@ export const PROJECTS: Project[] = [
     imageFit: 'contain',
   },
   {
-    title: 'LLVM Backend Assigments',
+    title: 'LLVM Backend Assignments',
     description: 'Custom LLVM 17 transformation passes. Assignments for the "Formal Languages and Compilers" course, front-end module.',
     imageUrl: llvmBackendImg,
     tags: ['C++', 'Clang', 'LLVM 16', 'LLVM IR', 'CMake'],
-    link: 'https://github.com/mc-cat-tty/llvm-17.0.6-compilers',
+    link: 'https://github.com/ent0n29/compilers-assignments',
     imageFit: 'contain',
+    readMore: '/blog/llvm_backend_assignments.html'
   },
   {
     title: 'Kaleidoscope Compiler',
@@ -108,6 +110,7 @@ export const PROJECTS: Project[] = [
     tags: ['Python3', 'Django', 'Javascript', 'jQuery', 'Bootstrap 5', 'WebSocket', 'DB modeling', 'REST', 'ORM'],
     link: 'https://github.com/mc-cat-tty/mmr_stock',
     imageFit: 'contain',
+    readMore: 'https://github.com/mc-cat-tty/mmr_stock/blob/main/docs/report.pdf'
   },
   {
     title: 'PlaceRank',
@@ -115,6 +118,7 @@ export const PROJECTS: Project[] = [
     imageUrl: placerankImg,
     tags: ['Python3', 'NLP', 'BERT', 'GPT', 'Terminal UI'],
     link: 'https://github.com/mc-cat-tty/PlaceRank',
+    readMore: 'https://github.com/mc-cat-tty/PlaceRank/blob/main/assets/Slideshow.pdf'
   },
   {
     title: 'PersonalFinance',
@@ -131,6 +135,7 @@ export const PROJECTS: Project[] = [
     tags: ['C', 'FreeRTOS', 'Python3', 'InfluxDB', 'LoRa protocol', 'KiCAD', 'Fusion360'],
     link: 'https://github.com/ITIS-Enrico-Fermi/Cansat2021',
     imageFit: 'contain',
+    readMore: 'https://github.com/ITIS-Enrico-Fermi/Cansat2021/blob/main/report.pdf'
   },
   {
     title: 'PlanarEvolvedAntenna',
