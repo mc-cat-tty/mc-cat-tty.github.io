@@ -47,6 +47,7 @@ export const PROJECTS: Project[] = [
     imageUrl: paavImg,
     tags: ['Python3', 'C++', 'PCL', 'Eigen3', 'Numpy', 'Matplotlib'],
     link: 'https://github.com/mc-cat-tty/paav-assignments',
+    readMore: '/blog/ad_assignments.html'
   },
   {
     title: 'HPC Assignments',
@@ -85,7 +86,7 @@ export const PROJECTS: Project[] = [
     tags: ['C++', 'Clang', 'LLVM 16', 'LLVM IR', 'CMake'],
     link: 'https://github.com/ent0n29/compilers-assignments',
     imageFit: 'contain',
-    readMore: '/blog/llvm_backend_assingments.html'
+    readMore: '/blog/llvm_backend_assignments.html'
   },
   {
     title: 'Kaleidoscope Compiler',

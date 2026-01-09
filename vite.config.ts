@@ -30,7 +30,8 @@ export default defineConfig(({ mode }) => {
       rollupOptions: {
         input: {
           main: path.resolve(__dirname, 'index.html'),
-          llvm_backend_assingments: path.resolve(__dirname, 'blog/llvm_backend_assingments.html'),
+          llvm_backend_assignments: path.resolve(__dirname, 'blog/llvm_backend_assignments.html'),
+          ad_assignments: path.resolve(__dirname, 'blog/ad_assignments.html'),
           // template: path.resolve(__dirname, 'blog/template.html'),
         },
       },
