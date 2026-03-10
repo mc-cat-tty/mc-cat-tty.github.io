@@ -1,0 +1,18 @@
+body {
+    background-color: #f0e7dc;
+    color: #1c1917;
+  }
+  /* Custom Scrollbar for a cleaner look */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #d6cbb1; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #a8a29e; 
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #78716c; 
+  }
