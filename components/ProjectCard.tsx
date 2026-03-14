@@ -22,7 +22,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
   return (
     <Wrapper {...wrapperProps}>
-      <div className="group flex flex-col h-full bg-card border border-stone-300/50 rounded-lg overflow-hidden transition-all duration-200 active:scale-[0.98] active:border-stone-400">
+      <div className="group flex flex-col h-full bg-card border border-stone-300/50 rounded-lg overflow-hidden transition-all duration-200 active:scale-[0.98] hover:scale-[0.993] active:border-stone-400">
         <div className={`h-48 overflow-hidden ${imageContainerClass}`}>
           <img
             src={project.imageUrl}
