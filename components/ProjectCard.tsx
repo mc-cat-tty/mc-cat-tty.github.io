@@ -54,10 +54,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               href={project.readMore}
               target="_blank"
               rel="noopener noreferrer"
-              className="nav-link inline-flex items-center ml-2 px-2 py-0.5 text-xs font-sans border rounded bg-[#f5f4ed] border-[#d1cfc5] text-[#73726c] hover:border-[#b8b6ad] hover:bg-[#d1cfc5] transition-colors align-middle"
+              className="nav-link inline-flex items-center ml-2 px-2 py-1 text-xs font-sans rounded bg-[#121211] text-[#faf8f5] hover:bg-[#474743] transition-colors align-middle"
               aria-label={`Read more about ${project.courseTitle}`}
             >
-              Read More
+              Read more
               <svg xmlns="http://www.w3.org/2000/svg" className="ml-1 w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
