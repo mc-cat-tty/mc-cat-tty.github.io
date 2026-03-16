@@ -71,7 +71,7 @@
                 Home
             </a>
             
-            <!-- Blog Title in Navbar (Absolutely Centered) -->
+            <!-- Blog Title in Navbar -->
             <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-10">
                 <span class="font-sans font-bold text-ink text-sm md:text-base truncate sm:block max-w-md px-4 pointer-events-auto">
                     AD Vehicles Assignments

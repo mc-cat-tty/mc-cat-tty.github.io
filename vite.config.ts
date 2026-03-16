@@ -30,9 +30,10 @@ export default defineConfig(({ mode }) => {
       rollupOptions: {
         input: {
           main: path.resolve(__dirname, 'index.html'),
-          llvm_backend_assignments: path.resolve(__dirname, 'blog/llvm_backend_assignments.html'),
-          ad_assignments: path.resolve(__dirname, 'blog/ad_assignments.html'),
+          // llvm_backend_assignments: path.resolve(__dirname, 'blog/llvm_backend_assignments.html'),
+          // ad_assignments: path.resolve(__dirname, 'blog/ad_assignments.html'),
           'revolut-breakeven': path.resolve(__dirname, 'tools/revolut-breakeven/index.html'),
+          'blog': path.resolve(__dirname, 'blog/index.html'),
           // template: path.resolve(__dirname, 'blog/template.html'),
         },
       },
